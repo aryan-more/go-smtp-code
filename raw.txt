@@ -1,0 +1,44 @@
+# source https://en.wikipedia.org/wiki/List_of_SMTP_server_return_codes 
+211 System Status
+214 Help  
+220 Service Ready
+221 Service Closing Transmission Channel
+221 2.0.0 Goodbye 
+235 2.7.0 Authentication succeeded
+240 QUIT
+250 Requested Mail Action completed
+251 User Not Local But Will Forward
+252 Cannot Verify The User But  Try To Deliver
+334 Server Challenge
+354 Start Mail Input
+421 Service Not Available
+432 4.7.12 Password Required
+450 temporary Mailbox Unavailable
+451 Requested Action Aborted
+451 4.4.1 IMAP Server Unavailable 
+452 Insufficient System Storage
+454 4.7.0 Temporary Auth Fail
+455 Server Unable To Accommodate Parameters
+500 Syntax Error
+500 5.5.6 Auth Exchange line is too long
+501 Syntax Error In Parameters or arguments
+501 5.5.2 Cannot Base64 decode Client responses 
+501 5.7.0 Client Initiated Authentication Exchange 
+502 Command Not implemented
+503 Bad sequence of commands
+504 Command parameter is not implemented
+504 5.5.4 Unrecognized authentication type
+521 Server does not accept mail 
+523 Encryption Needed
+530 5.7.0 Authentication required 
+534 5.7.9 Authentication Mechanism Is Weak 
+535 5.7.8 Authentication Credentials Invalid
+538 5.7.11 Encryption Required For Requested Auth Mechanism
+550 mailbox unavailable 
+551 User not local
+552 exceeded storage allocation
+553 mailbox name not allowed
+554 Transaction has failed
+554 No SMTP service here
+554 5.3.4 Message too big for system 
+556 Domain does not accept mail 
