@@ -26,9 +26,11 @@ with open("raw.txt") as reader:
 
 
 with open("gen.go" ,'w') as writer:
-    writer.write('package smtpcodes\n\n')
+    writer.write('package smtp_codes\n\n')
     for variable in variables:
-        enhancedCode ='[3]int16{{}}'.format(",".join([str(i) for i in variable[1]])) if variable[1] != None else 'NoEnhancedCodes'
+        enhancedCode = 'NoEnhancedCodes'
+        if variable[1] != None:
+            enhancedCode = '[3]int16{' + ",".join([str(i) for i in variable[1]]) + '}'
         writer.write(f"var {variable[2]} = SmtpCode{{Code: {variable[0]}, EnhancedCodes: {enhancedCode }}}\n\n")
 
 
